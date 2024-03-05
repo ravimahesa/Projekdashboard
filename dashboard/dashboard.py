@@ -40,7 +40,8 @@ def create_rfm_df(df):
     rfm_df.drop("max_order_timestamp", axis=1, inplace=True)
     return rfm_df
 
-all_df = pd.read_csv("https://docs.google.com/spreadsheets/d/1aMKt0hjmnx3Gxv2HZRM7DeruiRfT87PSioL-5WTdfS4/edit?usp=sharing")
+data_url = "https://docs.google.com/spreadsheets/d/1aMKt0hjmnx3Gxv2HZRM7DeruiRfT87PSioL-5WTdfS4/edit?usp=sharing"
+all_df = pd.read_csv(data_url)
 
 datetime_columns = ["order_purchase_timestamp", "order_delivered_customer_date"]
 all_df.sort_values(by="order_purchase_timestamp", inplace=True)
