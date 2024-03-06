@@ -9,5 +9,5 @@ pip install -r requirements.txt
 
 ## Run steamlit app
 ```
-streamlit run c:\Users\Dell\Documents\Bangkit\Dashboard\dashboard.py
+streamlit run dashboard\dashboard.py
 ```
